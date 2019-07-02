@@ -19,6 +19,7 @@
          <div class="form-group">
              <input id="lunch-menu"
                     type="text"
+                    style="border-color:{{ style.color}}"
                     ng-model="items"
                     ng-keyup="displayNumeric();"
                     placeholder="separate by comma"
@@ -28,9 +29,9 @@
              <button ng-click="lunchCheck()"
                      class="btn btn-default">Check If Too Much</button>
          </div>
-         <div class="form-group message">
-<!--             {{ totalItems }}-->
-             {{ msg }} <br>
+         <div class="form-group message" >
+<!--             {{ totalItems }} <br>-->
+             <span ng-style="style">{{ msg }}</span>
          </div>
    </div>
 
