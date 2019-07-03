@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Individual Project-Yuqi Liu</title>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<style type="text/css">
+		h1{
+			color: #672E3B;
+			font-family: Helvetica;
+		}
+		h2,h3{
+			color: #672E3B;
+			font-family: arial;
+		}
+		h4.header{
+			color: #AD5D5D;
+		}
+		p {
+    		line-height: 160%;
+		}
+		ol {
+    		line-height: 160%;
+		}
+		body{
+		background: #F5F5DC;
+}
+
+	</style>
+</head>
+
+<body>
+	<h1>
+		Immigration and Citizenship Analysis in the U.S
+	</h1>
+	<h2>Yuqi Liu</h2>
+	<h3>Catelogue</h3>
+	<div>
+	<a href="#TI" class="index" style="color: purple;">Topic Introduction</a><br>
+	<a href="#DS" class="index" style="color: purple;">Data Source</a><br>
+	<a href="#RQ" class="index" style="color: purple;">Research Questions</a><br>
+	<a href="#DP" class="index" style="color: purple;">Data Products:</a>
+	<a href="#DPa" class="index" style="color: purple;">a</a>
+	<a href="#DPb" class="index" style="color: purple;">b</a>
+	<a href="#DPc" class="index" style="color: purple;">c</a>
+	<a href="#DPd" class="index" style="color: purple;">d</a><br>
+	<a href="#SA" class="index" style="color: purple;">SWOT Analysis</a><br>
+	<a href="#FS" class="index" style="color: purple;">Futher Study</a><br>
+	</div>
+	<div id="TI">
+	<h3>Topic Introduction</h3>
+	<p>
+		As a typical immigrant country, the U.S. welcomes a huge number of immigrants from all over the world each year. The government provides several approaches, including working, marriage, humanitarian, etc. to allow foreigners to accomplish their American dream and attain lawful permanent resident (LPR) status. There are lots of immigrant data worth to explore and visualized. Furthermore, it can be helpful to international students who wants to know more about this country and its immigrant data. By doing dataset research and data visualization, the immigrant situation and policy of this country can be better understand. 
+ 	</p>
+ 	</div>
+ 	<div id="DS">
+ 	<h3>Data Source</h3>
+ 	<p> 
+ 	<h4 class="header">a. USCIS</h4>
+      The main data source are from <a href="https://www.uscis.gov/tools/reports-studies/immigration-forms-data">www.uscis.gov</a> and <a href="https://www.migrationpolicy.org/programs/migration-data-hub">www.migrationpolicy.org</a>. <br>
+     <a href="https://www.uscis.gov/tools/reports-studies/immigration-forms-data">
+      <img src="http://i65.tinypic.com/5vyl1x.jpg" width="166" height="166"></a><br>
+      U.S. Citizenship and Immigration Services is the government agency oversees lawful immigration to the United States. <a href="#_ftn1">[1]</a> They provide summarized immigration and citizenship data on their website. The dataset are divided into eight parts: 
+     <p>
+     <li> Deferred action for childhood arrivals(DACA)</li>
+     <li> Family based</li>
+     <li> Employment based</li>
+     <li> Humanitarian</li>
+     <li> Citizenship and naturalization</li>
+     <li> Frequently requested statistics</li>
+     <li> Forms</li>
+     <li> Archives</li>
+      In this visualization project, employment and performance data were applied to see H1-b trends, enterprises distributions and case volume and pending duration.<br>
+  	</p>
+	
+  	<p>
+  	<h4 class="header">b. MPI</h4>
+  	<a href="https://www.migrationpolicy.org/programs/data-hub/us-immigration-trends">
+     <img src="http://i67.tinypic.com/zmz28z.png" width="206" height="35"></a><br>
+      The Migration Policy Institute is an independent research institute who provides analysis, development, and evaluation of migration and refugee policies at local, national, and international levels. <a href="#_ftn2">[2]</a> The statistic data is from MPI Data Hub: Acquisition of U.S. Citizenship by Country of Birth (Fiscal Year 1999-2015) and Foreign-Born Population by State: 1990, 2000, 2010, and 2015. The data was used to see the composition of immigrant population and trend of foreign population's residential state.
+    </p>
+	</div>
+	<div id="RQ">
+	<h3>Research Questions</h3>
+            <ol>
+                <li>What’s the original citizenship composition of immigrant population and how they change during the years?</li>
+                <li>Which states they were heading to in recent year?</li>
+                <li>What H1-b occupations trend are like in last 10 years?</li>
+                <li>How were the beneficiary education attainment?</li>
+                <li>Case volume and pending situation in each state?</li>
+            </ol>
+	</div>
+	<div id="DP">
+    <h3>Data Products</h3></div>
+	</div>
+	<div id="DPa">
+    <h4 class="header">a. Tableau Visualization for research question 1 & 2.</h4>
+    <p>
+     The left slopgraph indicates how original citizenship of immigrant poplation change during the years and the right heatmap shows which states immigrants would like to resident. Above the map, The foreign population  in 1990 and 2015 was plotted to visually compare each state's population change between two years.<br>
+    </p>
+    <figure>
+	<a href="https://public.tableau.com/profile/yuqi.liu1828#!/vizhome/DataProduct_0/Dashboard1">
+		<img class="size-full wp-image-3551" src="http://i67.tinypic.com/2psg2u9.png" alt="A dynamic graph (click to see interactive version)" width="831" height="670">
+	</a>
+	<figcaption><em>A dynamic graph (click to see interactive version)</em></figcaption>
+	</figure>
+	<h4>Observations</h4> 
+	<ol>
+		<li>By adjusting year range in the filter, it is easily to see how immigrant population change during the years. The first chart shows a population decrease of Americas and Asia and an increase of Africa from 1999 to 2007. While from then until 2015, the population of Americas and Asia increase. But overall, there is a decrease trend for those two countries. The population rank can be obviously seen from the chart: Americas, Asias, Europe Africa, etc. and the rank never change during the years. </li>
+		<figure><img src="http://i64.tinypic.com/28spkll.png" width="820" height="420"></figure>
+		<li>The most popular state is California in 2005, followed by Texas, New York and Florida. There is no apparently geographical factors accoring to the map. The popular states all have better education resources and employment opportunities and that might be the reason with greater attraction compared to other states. </li>
+		<figure><img src="http://i65.tinypic.com/2niml2q.png" width="520" height="420"></figure>
+		<li>
+		From the plot, California always had the highest foreign born population and there was small change between 1990 and 2015. Texas had the largest change between two years. Most of the states had an increase of foreign born population. States themself had very few foreign population like Montana,  South/North Dokota, Vermont, West Virginia and Wyoming, demonstrate very little change.
+		</li>
+		<figure><img src="http://i64.tinypic.com/6qzkv8.png" width="620" height="320"></figure>
+	</ol>
+	</div>
+	<br>
+	<div id="DPb">
+	<h4 class="header">b. Plotly for research question 3.</h4>
+	<div id="myDiv"></div>
+	<script>
+  Plotly.d3.csv("https://raw.githubusercontent.com/iamyuqi/hello-world/master/h-1b-2007-2017-trend-tables.csv", function(err, rows){
+
+  function unpack(rows, key) {
+  return rows.map(function(row) { return row[key]; });
+}
+
+  var frames = []
+  var x = unpack(rows, 'Date')
+  var y = unpack(rows, 'Computer Related')
+  var x2 = unpack(rows, 'Date')
+  var y2 = unpack(rows, 'Architecture Engineering and Surveying')
+  var x3 = unpack(rows, 'Date')
+  var y3 = unpack(rows, 'Education')
+  var x4 = unpack(rows, 'Date')
+  var y4 = unpack(rows, 'Administrative Specializations')
+  var x5 = unpack(rows, 'Date')
+  var y5 = unpack(rows, 'Medicine and Health')
+  var x6 = unpack(rows, 'Date')
+  var y6 = unpack(rows, 'Managers and Officials')
+  var x7 = unpack(rows, 'Date')
+  var y7 = unpack(rows, 'Life Sciences')
+  var x8 = unpack(rows, 'Date')
+  var y8 = unpack(rows, 'Mathematics and Physical Sciences')
+  var x9 = unpack(rows, 'Date')
+  var y9 = unpack(rows, 'Physical Sciences')
+  var x10 = unpack(rows, 'Date')
+  var y10 = unpack(rows, 'Other Occupations')
+
+  var n = 100;
+  for (var i = 0; i < n; i++) {
+    frames[i] = {data: [{x: [], y: []}, {x: [], y: []}, {x: [], y: []},
+    					{x: [], y: []}, {x: [], y: []}, {x: [], y: []},
+    					{x: [], y: []}, {x: [], y: []}, {x: [], y: []}, 
+    					{x: [], y: []}]}
+    frames[i].data[0].x = x.slice(0, i+1); frames[i].data[0].y = y.slice(0, i+1);
+    frames[i].data[1].x = x2.slice(0, i+1); frames[i].data[1].y = y2.slice(0, i+1);
+    frames[i].data[2].x = x3.slice(0, i+1); frames[i].data[2].y = y3.slice(0, i+1);
+    frames[i].data[3].x = x4.slice(0, i+1); frames[i].data[3].y = y4.slice(0, i+1);
+    frames[i].data[4].x = x5.slice(0, i+1); frames[i].data[4].y = y5.slice(0, i+1);
+    frames[i].data[5].x = x6.slice(0, i+1); frames[i].data[5].y = y6.slice(0, i+1);
+    frames[i].data[6].x = x7.slice(0, i+1); frames[i].data[6].y = y7.slice(0, i+1);
+    frames[i].data[7].x = x8.slice(0, i+1); frames[i].data[7].y = y8.slice(0, i+1);
+    frames[i].data[8].x = x9.slice(0, i+1); frames[i].data[8].y = y9.slice(0, i+1);
+    frames[i].data[9].x = x10.slice(0, i+1); frames[i].data[9].y = y10.slice(0, i+1);
+  }
+
+  var trace1 = {
+    type: "scatter",
+    mode: "lines",
+    name: 'Computer Related',
+    x: frames[0].data[0].x,
+    y: frames[0].data[0].y,
+    line: {color: 'royalblue'}
+  }
+
+  var trace2 = {
+    type: "scatter",
+    mode: "lines",
+    name: 'Architecture Engineering and Surveying',
+    x: frames[0].data[1].x,
+    y: frames[0].data[1].y,
+    line: {color: 'royalred'}
+  }
+
+  var trace3 = {
+    type: "scatter",
+    mode: "lines",
+    name: 'Education',
+    x: frames[0].data[2].x,
+    y: frames[0].data[2].y,
+    line: {color: 'royalgreen'}
+  }
+
+  var trace4 = {
+    type: "scatter",
+    mode: "lines",
+    name: 'Administrative Specializations',
+    x: frames[0].data[3].x,
+    y: frames[0].data[3].y,
+    line: {color: 'royalpink'}
+  }
+
+   var trace5 = {
+    type: "scatter",
+    mode: "lines",
+    name: 'Medicine and Health',
+    x: frames[0].data[4].x,
+    y: frames[0].data[4].y,
+    line: {color: 'lightgreen'}
+  }
+
+  var trace6 = {
+    type: "scatter",
+    mode: "lines",
+    name: 'Managers and Officials',
+    x: frames[0].data[5].x,
+    y: frames[0].data[5].y,
+    line: {color: 'grey'}
+  }
+
+  var trace7 = {
+    type: "scatter",
+    mode: "lines",
+    name: 'Life Sciences',
+    x: frames[0].data[6].x,
+    y: frames[0].data[6].y,
+    line: {color: 'lightblue'}
+  }
+
+  var trace8 = {
+    type: "scatter",
+    mode: "lines",
+    name: 'Mathematics and Physical Sciences',
+    x: frames[0].data[7].x,
+    y: frames[0].data[7].y,
+    line: {color: 'yellow'}
+  }
+
+  var trace9 = {
+    type: "scatter",
+    mode: "lines",
+    name: 'Physical Sciences',
+    x: frames[0].data[8].x,
+    y: frames[0].data[8].y,
+    line: {color: 'pink'}
+  }
+
+  var trace10 = {
+    type: "scatter",
+    mode: "lines",
+    name: 'Other Occupations',
+    x: frames[0].data[9].x,
+    y: frames[0].data[9].y,
+    line: {color: 'purple'}
+  }
+
+  var data = [trace1,trace2,trace3,trace4,trace5,trace6,trace7,trace8,trace9,trace10];
+
+  var layout = {
+    title: "H1b Occupation Trend(2007-2017)<br>Source: Immigration and Citizenship Data, <a href='https://www.uscis.gov/tools/reports-studies/immigration-forms-data'>USCIS </a>",
+    width: 900,
+	height:660,
+    xaxis: {
+      range: [2007,2017],
+      showgrid: false
+    },
+    yaxis: {
+      range: [0, 300000],
+      showgrid: false
+    },
+    legend: {
+      orientation: 'v',
+      x: 3.6,
+      y: 0.3,
+      xanchor: 'center'
+    },
+    updatemenus: [{
+      x: 0.5,
+      y: 0,
+      yanchor: "top",
+      xanchor: "center",
+      showactive: false,
+      direction: "left",
+      type: "buttons",
+      pad: {"t": 87, "r": 10},
+      buttons: [{
+        method: "animate",
+        args: [null, {
+          fromcurrent: true,
+          transition: {
+            duration: 0,
+          },
+          frame: {
+            duration: 40,
+            redraw: false
+          }
+        }],
+        label: "Play"
+      }, {
+        method: "animate",
+        args: [
+          [null],
+          {
+            mode: "immediate",
+            transition: {
+              duration: 0
+            },
+            frame: {
+              duration: 0,
+              redraw: false
+            }
+          }
+        ],
+        label: "Pause"
+      }]
+    }]
+  };
+	Plotly.newPlot('myDiv', data, layout).then(function() {
+    Plotly.addFrames('myDiv', frames);
+  });
+})
+  </script>
+  <p><em>Select to zoom the vislz (especially the bottom parts); Double click on legend to see single trace.</em></p>
+  <h4>Observations</h4>
+  <ol>
+		<li>Computer related occupatoion has been continuous in high volumn. However, it been through a big drop from last year. </li>
+		<li>Except from computer, architecture and surveying rank No.1 in the  remaining jobs. Physical science has the lowest occupation volumn during the years. </li>
+		<li>Before 2012, education had higher volumn comparing to administrative specializations. After 2013, administrative specializations became higher than education. </li>
+		<li>Most of occupations experienced decreases since 2016, except for mathematics and physical sciences.</li>
+	</ol>
+	<h4>Suggestions</h4>
+	<p>
+		<li>Although computer science is a hot major, its employment trends for h1-b seems unstable since 2016.</li>
+		<li>Students who are math or physical major might find more employment opportunities in the future.</li>
+		<li>Employment volumn for h1-b has been decreased from 2016, which might because of the country's policy. International students should have psychologicall prepared for the situation.</li>
+    </p>
+	</div>
+    <br>
+    <div id="DPc">
+    <h4 class="header">c. Google Chart for research question 4.</h4>
+<p>    
+<div id="sankey_basic" style="width: 900px; height: 300px;"></div>
+<script>      
+      google.charts.load('current', {'packages':['sankey']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'From');
+        data.addColumn('string', 'To');
+        data.addColumn('number', 'Weight');
+        data.addRows([
+          [ '2012', 'Associates Degree', 471 ],
+          [ '2012', 'Bachelor', 146174 ],        
+          [ '2012', 'Master', 122325 ],
+          [ '2012', 'Professional', 12625 ],
+          [ '2012', 'Doctorate', 25188 ],
+          [ '2013', 'Associates Degree', 376 ],
+          [ '2013', 'Bachelor', 136453 ],        
+          [ '2013', 'Master', 125052 ],
+          [ '2013', 'Professional', 12206 ],
+          [ '2013', 'Doctorate', 24671 ],
+          [ '2014', 'Associates Degree', 273 ],
+          [ '2014', 'Bachelor', 146368 ],        
+          [ '2014', 'Master', 141470 ],
+          [ '2014', 'Professional', 12001 ],
+          [ '2014', 'Doctorate', 24995 ],
+          [ '2015', 'Associates Degree', 269 ],
+          [ '2015', 'Bachelor', 170865 ],        
+          [ '2015', 'Master', 159828 ],
+          [ '2015', 'Professional', 11812 ],
+          [ '2015', 'Doctorate', 25188 ],
+          [ '2016', 'Associates Degree', 225 ],
+          [ '2016', 'Bachelor', 180077 ],        
+          [ '2016', 'Master', 180961 ],
+          [ '2016', 'Professional', 11880 ],
+          [ '2016', 'Doctorate', 25602 ],
+          [ '2017', 'Associates Degree', 171 ],
+          [ '2017', 'Bachelor', 139055 ],        
+          [ '2017', 'Master', 165830 ],
+          [ '2017', 'Professional', 9863 ],
+          [ '2017', 'Doctorate', 20589 ],
+        ]);
+
+        var options = {
+        	'title':'H1b Beneficiary Education Attainment(2012-2017)',			
+			'width':690,
+        };
+        var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
+        chart.draw(data, options);
+      }
+</script>
+<br>
+<h4>Observations</h4>
+  <ol>
+		<li>In total, Bachelor's and master's degrees have the largest proportion. </li>
+		<li>There was a peak in 2016 for all levels of education. </li>
+		<li>Comparing to 2012, in 2017, bachelor's degree even drop for h1-b, but master's degree increase. </li>
+
+	</ol>
+	<h4>Suggestion</h4>
+	<p>
+		Same to occupation's result, recent year's employment might not possitive after 2016, no matter for undergraduate international student or graduate.
+    </p>
+</p>
+</div>
+<br>
+	<div id="DPd">
+    <h4 class="header">d. Plotly Chart for research question 5.</h4>
+<div id="myDiv1"></div>
+	<script>
+    var trace1 = {
+  		x: ['ANC', 'PHO', 'TUC', 'FSA', 'CVC', 'FRE', 'IMP', 'LOS', 'LAC', 'SAC', 'SBD','SND','SFV', 'SFR', 'SNJ', 'SAA', 'DEN', 'HAR', 'DVD', 'WAS', 'OFM', 'HIA', 'JAC', 'KND', 'MIA', 'OKL', 'ORL', 'TAM', 'WPB', 'ATL', 'HHW', 'BOI', 'CHI', 'INP', 'DSM', 'WIC', 'LOU', 'NOL', 'POM', 'BAL', 'BOS', 'LAW', 'DET', 'SPM', 'KAN', 'STL', 'HEL', 'OMA', 'LVG', 'REN', 'MAN', 'MTL', 'NEW', 'ABQ', 'ALB', 'BUF', 'LNY', 'NYC', 'QNS', 'CLT', 'RAL', 'CIN', 'CLE', 'CLM', 'OKC', 'POO', 'PHI', 'PIT', 'PRO', 'CHL', 'GRR', 'MEM', 'DAL', 'ELP', 'HLG', 'HOU', 'SNA', 'SLC', 'STA', 'NOR', 'SEA', 'SPO', 'YAK', 'MIL', 'AGA', 'CHA', 'CHR', 'SAJ'],
+  		y: [189, 2580, 989, 322, 0, 3161, 429, 4,955, 4280, 3360, 6285, 5162, 3807, 5891, 4278, 4504, 1970, 2630, 0, 8513, 764, 3358, 1398, 3543, 1234, 2172, 2685, 2363, 1956, 4612, 1064, 633, 7407, 1769, 574, 337, 1236, 657, 311, 5047, 3544, 1846, 3743, 2552, 1593, 815, 93, 849, 1598, 322, 574, 2124, 11060, 566, 823, 1865, 4632, 13613, 4833, 1588, 2175, 895, 1342, 2215, 1033, 1996, 3289, 944, 1019, 942, 955, 1335, 3949, 1159, 1283, 3437, 4027, 936, 251, 1391, 2463, 239, 555, 940, 238, 69, 51, 745],
+  		name: 'Approved',
+		type: 'bar',
+		marker: {color: 'rgba(50, 171, 96, 0.6)',
+		line: {color: 'rgba(179, 255, 149, 1.0)', width: 0.5
+		    }
+		  }
+};
+
+	var trace2 = {
+  		x: ['ANC', 'PHO', 'TUC', 'FSA', 'CVC', 'FRE', 'IMP', 'LOS', 'LAC', 'SAC', 'SBD','SND','SFV', 'SFR', 'SNJ', 'SAA', 'DEN', 'HAR', 'DVD', 'WAS', 'OFM', 'HIA', 'JAC', 'KND', 'MIA', 'OKL', 'ORL', 'TAM', 'WPB', 'ATL', 'HHW', 'BOI', 'CHI', 'INP', 'DSM', 'WIC', 'LOU', 'NOL', 'POM', 'BAL', 'BOS', 'LAW', 'DET', 'SPM', 'KAN', 'STL', 'HEL', 'OMA', 'LVG', 'REN', 'MAN', 'MTL', 'NEW', 'ABQ', 'ALB', 'BUF', 'LNY', 'NYC', 'QNS', 'CLT', 'RAL', 'CIN', 'CLE', 'CLM', 'OKC', 'POO', 'PHI', 'PIT', 'PRO', 'CHL', 'GRR', 'MEM', 'DAL', 'ELP', 'HLG', 'HOU', 'SNA', 'SLC', 'STA', 'NOR', 'SEA', 'SPO', 'YAK', 'MIL', 'AGA', 'CHA', 'CHR', 'SAJ'],
+  		y: [57, 305, 105, 16, 0, 284, 104, 403, 872, 275, 899, 625, 304, 323, 318, 532, 411, 165, 0, 566, 93, 499, 134, 349, 229, 290, 492, 342, 488, 615, 113, 44, 762, 143, 66, 46, 144, 118, 9, 266, 311, 350, 510, 205, 162, 86, 8, 239, 170, 44, 57, 167, 723, 62, 87, 215, 358, 1801, 382, 128, 133, 57, 144, 127, 76, 154, 333, 70, 178, 103, 92, 69, 413, 145, 160, 504, 495, 82, 15, 120, 286, 17, 104, 130, 10, 15, 3, 131],
+		name: 'Denied',
+		type: 'bar',
+		marker: {color: 'rgba(255, 99, 71, 0.8)',
+		line: {color: 'rgba(255, 0, 0, 1.0)', width: 0.5
+		    }
+		  }
+};
+
+	var trace3 = {
+  		x: ['ANC', 'PHO', 'TUC', 'FSA', 'CVC', 'FRE', 'IMP', 'LOS', 'LAC', 'SAC', 'SBD','SND','SFV', 'SFR', 'SNJ', 'SAA', 'DEN', 'HAR', 'DVD', 'WAS', 'OFM', 'HIA', 'JAC', 'KND', 'MIA', 'OKL', 'ORL', 'TAM', 'WPB', 'ATL', 'HHW', 'BOI', 'CHI', 'INP', 'DSM', 'WIC', 'LOU', 'NOL', 'POM', 'BAL', 'BOS', 'LAW', 'DET', 'SPM', 'KAN', 'STL', 'HEL', 'OMA', 'LVG', 'REN', 'MAN', 'MTL', 'NEW', 'ABQ', 'ALB', 'BUF', 'LNY', 'NYC', 'QNS', 'CLT', 'RAL', 'CIN', 'CLE', 'CLM', 'OKC', 'POO', 'PHI', 'PIT', 'PRO', 'CHL', 'GRR', 'MEM', 'DAL', 'ELP', 'HLG', 'HOU', 'SNA', 'SLC', 'STA', 'NOR', 'SEA', 'SPO', 'YAK', 'MIL', 'AGA', 'CHA', 'CHR', 'SAJ'],
+  		y: [919, 11400, 2280, 1141, 0, 8471, 1133, 15924, 17930, 10783, 12519, 12455, 13776, 25320, 13132, 13664, 8479, 8919, 0, 16740, 4379, 10355, 3706, 9325, 15124, 12884, 10304, 10114, 7238, 19243, 2798, 1175, 23276, 3697, 3132, 1118, 2380, 3298, 712, 15237, 14856, 5923, 9966, 10549, 2827, 2457, 178, 2202, 7139, 1186, 971, 6388, 27584, 1499, 1787, 2785, 21332, 50240, 17429, 6240, 3955, 1586, 2305, 2980, 3339, 5694, 17236, 1743, 1901, 1590, 1330, 6599, 27679, 6237, 4843, 27271, 12905, 4456, 451, 4670, 13625, 573, 1005, 3534, 614, 211, 144, 2144],
+		name: 'Pending',
+		type: 'bar',
+		marker: {color: 'rgba(106, 90, 205, 0.8)',
+		line: {color: 'rgba(229, 185, 255, 1.0)', width: 0.5
+		    }
+		  }
+};
+
+	var data = [trace1, trace2, trace3];
+	var layout = {barmode: 'stack',
+			  title: "Performance of Each States (by Service Center; 2017,Q3)<br>Source: Immigration and Citizenship Data, <a href='https://www.uscis.gov/tools/reports-studies/immigration-forms-data'>USCIS </a>",
+			  font: {size: 10},
+			  width: 1200,
+	  		  height: 600,
+			};
+	Plotly.newPlot('myDiv1', data, layout);
+  </script>
+
+<p><em>Select to zoom the vislz</em></p>
+	<h4>Observations</h4>
+	<ol>
+		<li>Within a quarter, the maximum case number of a service center can reach to 55k (NYC). On the contrary, the minimum case number maybe no more than 220 (CHR). </li>
+		<li>NYC has the lowest efficiency, for its pending bar accounted for the largest proportion of the entire bar, so dose NEW(Newark), DAL(Dallas) and HOU (Houston). </li>
+		<li>ABQ(Albuquerque) performed great, and followed by INP(Indianapolis) and HHW(Honolulu). Although SPO(Spokane) and HEL(Helena) has very small amout of cases, their efficiency still low, for they having small proportion of the purple area (pending status).</li>
+		<li>Overall, service centers with large amount of cases might have low efficiency. Few service centers with small amount of cases have same issue.</li>
+	</ol>
+	<h4>Suggestions</h4>
+		<li>To the servise centers with heavy workload, assign more corresponding manpower.</li>
+		<li>From the servise centers with not light workload, learn their working methods and promote.</li>
+	</div>
+	<br>
+	<div id="SA">
+	<h3>SWOT Analysis</h3>
+		<ul>
+		<h4>Strength</h4>
+			<li>Data source is from official cite,  so the accuracy can be reliable.</li>
+			<li>Adequate data and clear format make data cleaning process easier.</li>
+			<li>Data products can help to intuitive understand the immigrant fact in recent years.</li>
+		<h4>Weakness</h4>
+			<li>There are already many related visualizations, since the data is public.</li>
+			<li>Hard to make connection between immigrant data and economic data.</li>
+			<li>Most of data products are observations (can’t make predictions or suggestions since immigration policy will change anytime). </li>
+		<h4>Opportunity</h4>
+			<li>There are plenty of data from online sources (surveys, economic census) can help to find correlation with immigrant data.</li>
+			<li>Date output might benefit international students whether applying h1b visa.</li>
+		<h4>Thread</h4>
+			<li>Confidential data will limit the findings on data product.</li>
+			<li>There is no significant change or trend appearing in visualizations.</li>
+		</ul>
+		</div>
+	<br>
+	<div id="FS">
+	<h3>Furthur Study</h3>
+	<ol>
+	<li>Explore more related data so that to connect immigrant data with economic data. </li>
+	<li>Investigate Eb5(investment immigration program) data and evalueate the risk.</li>
+	<li>Compare the U.S. with other immigrant countries, like Austrilia, Singapore, Canada, etc.</li>
+	<li>Learn more about D3.js and how to transform data into JSON file.</li>
+	</ol>
+	</div>
+	<div>
+		<br clear="all">
+		<hr size="1" align="left" width="96%">
+	<div>
+	<p>
+		<a href="#_ftn1" title>[1]</a>
+		"USCIS.gov About us. Last Reviewed/Updated: 12/30/2016"
+		<a href="https://www.uscis.gov/aboutus">https://www.uscis.gov/aboutus</a>
+	</p>
+	<p><a href="#_ftn2" title>[2]</a>
+		"MPI.org About MPI. "
+		<a href="https://www.migrationpolicy.org/about/mission">https://www.migrationpolicy.org/about/mission</a>
+	</p>
+	</div>
+	</div>
+	<br>
+	<footer>©2017Fall Yuqi Liu @ Stevens</footer>
+</body>
+</html>
