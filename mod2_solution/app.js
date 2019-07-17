@@ -30,7 +30,8 @@ function ShoppingListCheckOffService() {
       {name: "watermelon", quantity: "2"},
       {name: "udon", quantity: "6"},
       {name: "milk", quantity: "1"},
-      {name: "chocolate", quantity: "9"}];
+      {name: "chocolate", quantity: "9"},
+      {name: "beer", quantity: "12"}];
   var boughtItems = [];
 
   service.getItems = function () {
@@ -42,8 +43,9 @@ function ShoppingListCheckOffService() {
   };
 
   service.checkOutItem = function (itemIndex) {
-    items.splice(itemIndex, 1);
-    boughtItems.push(items[itemIndex]);
+      var item = items[itemIndex];
+      items.splice(itemIndex, 1);
+      boughtItems.push(item);
   };
 }
 
