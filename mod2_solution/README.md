@@ -14,4 +14,4 @@ The "Already Bought" list should initially be empty and display a message "Nothi
 
 Once the user "buys" every item on the "To Buy" list, i.e., clicks on the "Bought" button for every item in the "To Buy" list, instead of the empty "To Buy" list, display the message "Everything is bought!"
 
-<a href="https://iamyuqi.github.io/AngularJS/mod3_solution/"> Go to the App. </a>
+<a href="https://iamyuqi.github.io/AngularJS/mod2_solution/"> Go to the App. </a>
