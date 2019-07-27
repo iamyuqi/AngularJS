@@ -27,42 +27,40 @@
     </style>
   </head>
 <body>
-  <div class="container">
-  <h1>Shopping List Check Off</h1>
+    <div class="container">
+        <h1>Shopping List Check Off</h1>
+        <div class="row">
+            <!-- To Buy List -->
+            <div class="col-md-6" ng-controller='ToBuyController as toBuyList'>
+                <h2>To Buy:</h2>
+                <ul>
+                    <ol>
+                        <li ng-repeat="item in toBuyList.items">
+                            Buy {{ item.quantity }} {{ item.name }}
+                            <button class="btn btn-default" ng-click="toBuyList.boughtItem($index);"><span class="glyphicon glyphicon-ok"></span>
+                                <img class="emoji" src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png" height="20" width="20" align="absmiddle">
+                                Bought
+                            </button>
+                        </li>
+                    </ol>
+                </ul>
+                <div class="emptyMessage" ng-if="!toBuyList.items.length" >Everything is bought!</div>
+            </div>
 
-  <div class="row">
-
-    <!-- To Buy List -->
-    <div class="col-md-6" ng-controller='ToBuyController as toBuyList'>
-     <h2>To Buy:</h2>
-     <ul>
-        <ol>
-        <li ng-repeat="item in toBuyList.items">
-          Buy {{ item.quantity }} {{ item.name }}
-            <button class="btn btn-default" ng-click="toBuyList.boughtItem($index);"><span class="glyphicon glyphicon-ok"></span>
-                <img class="emoji" src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png" height="20" width="20" align="absmiddle">
-            Bought
-            </button>
-        </li>
-        </ol>
-     </ul>
-     <div class="emptyMessage" ng-if="!toBuyList.items.length" >Everything is bought!</div>
+            <!-- Already Bought List -->
+            <div class="col-md-6" ng-controller='AlreadyBoughtController as boughtList'>
+                <h2>Already Bought:</h2>
+                <ul>
+                    <ol>
+                        <li ng-repeat="item in boughtList.items">
+                            Bought {{ item.quantity }} {{ item.name }}
+                        </li>
+                    </ol>
+                </ul>
+                <div class="emptyMessage" ng-if="!boughtList.items.length">Nothing bought yet.</div>
+            </div>
+        </div>
     </div>
-
-    <!-- Already Bought List -->
-    <div class="col-md-6" ng-controller='AlreadyBoughtController as boughtList'>
-     <h2>Already Bought:</h2>
-     <ul>
-        <ol>
-        <li ng-repeat="item in boughtList.items">
-          Bought {{ item.quantity }} {{ item.name }}
-        </li>
-        </ol>
-     </ul>
-     <div class="emptyMessage" ng-if="!boughtList.items.length">Nothing bought yet.</div>
-    </div>
-  </div>
-</div>
-	<footer class="container text-center">©2019 YQ</footer>
+    <footer class="container text-center">©2019 YQ</footer>
 </body>
 </html>
