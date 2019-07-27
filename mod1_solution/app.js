@@ -4,7 +4,7 @@
 angular.module('LunchCheck', [])
 .controller('MsgController', MsgController);
 
-MSgController.$inject = ['$scope'];
+MsgController.$inject = ['$scope'];
 function MsgController($scope) {
     $scope.items = "";
     $scope.totalItems = 0;
