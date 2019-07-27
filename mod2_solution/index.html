@@ -41,9 +41,10 @@
           Buy {{ item.quantity }} {{ item.name }}
             <button class="btn btn-default" ng-click="toBuyList.boughtItem($index);"><span class="glyphicon glyphicon-ok"></span>
                 <img class="emoji" src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png" height="20" width="20" align="absmiddle">
-</body>
-</html>
- Bought</button></li>
+            Bought
+            </button>
+        </li>
+        </ol>
      </ul>
      <div class="emptyMessage" ng-if="!toBuyList.items.length" >Everything is bought!</div>
     </div>
@@ -55,6 +56,8 @@
         <ol>
         <li ng-repeat="item in boughtList.items">
           Bought {{ item.quantity }} {{ item.name }}
+        </li>
+        </ol>
      </ul>
      <div class="emptyMessage" ng-if="!boughtList.items.length">Nothing bought yet.</div>
     </div>
