@@ -1,0 +1,11 @@
+<h4>{{ title }}</h4>
+<div>
+    <div ng-repeat="item in menu.foundItems">
+        <div class="clearfix" ng-if="$index % 2 == 0"></div>
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.short_name }}</p>
+        <p>{{ item.description }}</p>
+        <button ng-click="menu.onRemove({index: $index});">Don't want this one!</button>
+    </div>
+</div>
+<div class="alert alert-danger" role="alert" ng-show="menu.onEmpty">{{ menu.onEmpty }}</div>
